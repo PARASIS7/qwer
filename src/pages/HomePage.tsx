@@ -36,10 +36,13 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          {/* Image - single, no badges */}
+          {/* Image - single, no badges - improved for mobile */}
           <div className="col-span-12 lg:col-span-6 order-2">
-            <div className="relative aspect-[4/5] rounded-[24px] overflow-hidden bg-[#F0EBDC]">
-              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=1500&fit=crop&auto=format&q=80" alt="TpapaT hero" className="w-full h-full object-cover" />
+            <div className="relative aspect-[1/1] md:aspect-[4/5] rounded-[24px] overflow-hidden bg-[#F0EBDC] max-h-[600px] md:max-h-none">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1200&h=1500&fit=crop&auto=format&q=80&crop=top" alt="TpapaT hero - black basic tee" className="w-full h-full object-cover object-top md:object-center" />
+              <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] font-bold border border-white/60 shadow-sm">
+                TpapaT · L تا 3XL
+              </div>
             </div>
           </div>
         </div>
