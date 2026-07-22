@@ -16,10 +16,12 @@
 
 * {
   font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
 }
 
 html {
   direction: rtl;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +31,7 @@ body {
   font-weight: 400;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {

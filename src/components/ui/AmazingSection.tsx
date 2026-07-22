@@ -156,10 +156,11 @@ const AmazingSection: React.FC = () => {
                 </div>
               ))}
               <div className="snap-start shrink-0 w-[260px] md:w-[280px]">
-                <Link to="/shop" className="w-full h-full min-h-[380px] bg-white border-2 border-dashed border-black/10 rounded-[16px] flex flex-col items-center justify-center p-6 hover:border-[#953026]/50 hover:bg-white transition">
-                  <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center text-[20px]">→</div>
-                  <div className="font-bold text-[14px] mt-3">دیدن همه محصولات</div>
+                <Link to="/shop" className="w-full h-full min-h-[380px] bg-white border-2 border-dashed border-black/10 rounded-[16px] flex flex-col items-center justify-center p-6 hover:border-[#953026]/50 hover:bg-[#FFFBF0] transition group">
+                  <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center text-[20px] group-hover:bg-[#953026] transition">←</div>
+                  <div className="font-black text-[15px] mt-4">دیدن همه محصولات</div>
                   <div className="text-[11px] text-gray-500 mt-1">{amazingProducts.length} محصول شگفت‌انگیز</div>
+                  <div className="mt-4 bg-black text-white px-5 py-2 rounded-full text-[11px] font-bold group-hover:bg-[#953026] transition">مشاهده همه ←</div>
                 </Link>
               </div>
             </div>

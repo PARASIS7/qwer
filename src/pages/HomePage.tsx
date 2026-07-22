@@ -14,9 +14,9 @@ const HomePage: React.FC = () => {
   const categories = ['همه', 'تیشرت', 'پیراهن', 'هودی'];
 
   return (
-    <div className="bg-[#FFFCF5] overflow-x-hidden max-w-[100vw]">
+    <div className="bg-[#FFFCF5] overflow-x-hidden">
       {/* Hero - Minimal: one message + one CTA + one image, no floating badges */}
-      <section className="px-4 md:px-8 lg:px-12 py-12 md:py-20 overflow-hidden max-w-[100vw]">
+      <section className="px-4 md:px-8 lg:px-12 py-12 md:py-20 overflow-hidden">
         <MastheadMeta />
         
         <div className="mt-12 md:mt-20 grid grid-cols-12 gap-10 lg:gap-16 items-center max-w-[1280px] mx-auto">
@@ -38,9 +38,9 @@ const HomePage: React.FC = () => {
 
           {/* Image - single, no badges - improved for mobile */}
           <div className="col-span-12 lg:col-span-6 order-2">
-            <div className="relative aspect-[1/1] md:aspect-[4/5] rounded-[24px] overflow-hidden bg-[#F0EBDC] max-h-[600px] md:max-h-none">
+            <div className="relative w-full aspect-[1/1] md:aspect-[4/5] rounded-[24px] overflow-hidden bg-[#F0EBDC] max-h-[520px] md:max-h-none mx-auto">
               <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1200&h=1500&fit=crop&auto=format&q=80&crop=top" alt="TpapaT hero - black basic tee" className="w-full h-full object-cover object-top md:object-center" />
-              <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] font-bold border border-white/60 shadow-sm">
+              <div className="absolute bottom-3 right-3 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-full text-[11px] font-black border border-white/80 shadow-md">
                 TpapaT · L تا 3XL
               </div>
             </div>
@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
       <AmazingSection />
 
       {/* Newest with quick category filter */}
-      <section className="px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-white overflow-hidden max-w-[100vw]">
+      <section className="px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-white overflow-hidden">
         <div className="max-w-[1280px] mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
             <div>
@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Brand Story - only narrative + image, no specs table */}
-      <section className="px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-[#F6F1E6] overflow-hidden max-w-[100vw]">
+      <section className="px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-[#F6F1E6] overflow-hidden">
         <div className="max-w-[1280px] mx-auto grid grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="col-span-12 lg:col-span-6">
             <h2 className="font-black text-[28px] md:text-[40px] leading-[0.9] tracking-[-0.04em] text-black">
@@ -107,7 +107,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Categories - Shop by Category */}
-      <section className="px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-white overflow-hidden max-w-[100vw]">
+      <section className="px-4 md:px-8 lg:px-12 py-20 md:py-28 bg-white overflow-hidden">
         <div className="max-w-[1280px] mx-auto">
           <h2 className="font-black text-[22px] tracking-tight text-black mb-8">خرید بر اساس دسته‌بندی</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
